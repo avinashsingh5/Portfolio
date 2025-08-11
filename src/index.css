@@ -16,6 +16,9 @@ html {
 
 body {
   @apply bg-[#0b0b0f] text-zinc-200 antialiased min-h-screen font-inter;
+  /* Improve mobile viewport handling and safe areas */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Typography families */
@@ -34,6 +37,9 @@ body {
 section[id] {
   scroll-margin-top: var(--header-offset);
 }
+
+/* Images scale down on small screens */
+img { max-width: 100%; height: auto; }
 
 /* Soft entrance animation utility */
 .fade-in-up { opacity: 0; transform: translateY(12px); animation: fadeInUp .6s both; }

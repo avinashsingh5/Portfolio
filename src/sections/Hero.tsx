@@ -44,7 +44,7 @@ export function Hero() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="order-1 md:order-2"
         >
-          <div className="mx-auto h-72 w-56 md:h-[28rem] md:w-[22rem]">
+          <div className="mx-auto flex items-center justify-center">
             <ProfileCard
               name="Avinash Kumar"
               title="Full‑Stack Developer"
