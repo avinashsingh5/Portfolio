@@ -45,10 +45,10 @@ export function About() {
           >
             Clean code, measurable impact, and delightful user experience.
           </motion.p>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="https://github.com/avinashsingh5/certificates/blob/main/12215935_AvinashKumar.pdf"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-zinc-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] hover:bg-white/5"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-zinc-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] hover:bg-white/5"
             >
               <FiDownload className="h-4 w-4 text-blue-400" />
               Download Resume
@@ -56,7 +56,7 @@ export function About() {
             <a
               href="https://www.linkedin.com/in/avinash-kumarsingh/"
               target="_blank"
-              className="ml-3 inline-flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-zinc-200 hover:bg-white/5"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-zinc-200 hover:bg-white/5"
             >
               Connect on LinkedIn
             </a>
