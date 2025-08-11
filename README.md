@@ -1,6 +1,9 @@
 # Portfolio (React + Vite + Tailwind v4 + Framer Motion)
 
+🚀 **[Live Demo – avinashsingh.me](https://avinashsingh.me)**
+
 A modern, responsive personal portfolio with a dark theme, smooth animations, and reusable sections.
+
 
 ## Tech
 - React + TypeScript (Vite)
@@ -28,3 +31,12 @@ A modern, responsive personal portfolio with a dark theme, smooth animations, an
 ## Notes
 - Tailwind v4 uses the `@import "tailwindcss";` entry in `src/index.css`.
 - Smooth scroll uses `react-scroll` with a sticky navbar (offset -64).
+
+
+## License
+
+MIT License
+
+Copyright (c) 2025 Avinash Singh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
