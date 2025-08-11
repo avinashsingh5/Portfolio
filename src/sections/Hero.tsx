@@ -25,13 +25,13 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#projects"
-              className="accent-bg accent-ring inline-flex items-center rounded-full px-5 py-2.5 text-sm font-medium text-black ring-1 ring-inset ring-white/10 transition hover:opacity-90"
+              className="accent-bg accent-ring inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-black ring-1 ring-inset ring-white/10 transition hover:opacity-90 min-w-[9rem]"
             >
               View Projects
             </a>
             <a
               href="#about"
-              className="inline-flex items-center rounded-full border border-white/10 px-5 py-2.5 text-sm font-medium text-white/90 transition hover:bg-white/5"
+              className="inline-flex items-center justify-center rounded-full border border-white/10 px-5 py-2.5 text-sm font-medium text-white/90 transition hover:bg-white/5 min-w-[9rem]"
             >
               About Me
             </a>

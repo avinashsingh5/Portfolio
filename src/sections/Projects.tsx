@@ -75,22 +75,22 @@ export function Projects() {
             className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
           >
             {/* Gradient header */}
-            <div className={`relative h-20 w-full bg-gradient-to-r ${project.gradient}`}>
+            <div className={`relative w-full bg-gradient-to-r ${project.gradient} min-h-[4.5rem] md:h-20 p-4` }>
               <div className="absolute inset-0 opacity-40 [background:radial-gradient(800px_200px_at_20%_-20%,white_5%,transparent_60%)]" />
-              <div className="relative flex h-full items-center justify-between px-5">
-                <div className="flex items-center gap-3">
+              <div className="relative flex h-full flex-col items-start justify-center gap-1 px-0 md:flex-row md:items-center md:justify-between md:px-1">
+                <div className="flex items-start gap-3 pr-6 md:items-center">
                   {(() => { const Icon = project.icon; return <Icon className="h-6 w-6 text-white" /> })()}
                   <div>
-                    <h3 className="text-base font-semibold text-white">{project.title}</h3>
-                    <p className="text-xs text-white/80">{project.tagline}</p>
+                    <h3 className="text-sm md:text-base font-semibold leading-tight text-white break-words">{project.title}</h3>
+                    <p className="text-[11px] md:text-xs text-white/80 leading-snug break-words">{project.tagline}</p>
                   </div>
                 </div>
-                <span className="shrink-0 text-[10px] font-medium tracking-wide text-white/90">{project.period}</span>
+                <span className="hidden sm:block shrink-0 text-[10px] font-medium tracking-wide text-white/90">{project.period}</span>
               </div>
             </div>
 
             {/* Body */}
-            <div className="p-5">
+            <div className="p-4 md:p-5">
               <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-300">
               {project.bullets.map((b, i) => (
                 <motion.li key={i} initial={{ opacity: 0, x: -6 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }}>
@@ -109,11 +109,11 @@ export function Projects() {
               </div>
 
               {/* CTA */}
-              <div className="mt-4 flex items-center gap-3">
+              <div className="mt-4 flex flex-wrap items-center gap-3">
                 <a
                   href={project.github}
                   target="_blank"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-1.5 text-xs font-medium text-zinc-200 transition hover:bg-white/5"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1.5 text-xs font-medium text-zinc-200 transition hover:bg-white/5"
                 >
                   <FiGithub className="h-4 w-4" />
                   GitHub

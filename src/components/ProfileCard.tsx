@@ -358,7 +358,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
               </div>
             )}
           </div>
-          <div className="pc-content">
+          <div className="pc-content" style={{ paddingBottom: 140 }}>
             <div className="pc-details">
               <h3>{name}</h3>
               <p>{title}</p>
