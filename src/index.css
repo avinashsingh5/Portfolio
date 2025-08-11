@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global theme tokens */
+:root {
+  --accent: 243 94% 66%; /* hsl: indigo */
+  --header-offset: 72px;
+}
+
+/* Dark as default */
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#0b0b0f] text-zinc-200 antialiased min-h-screen font-inter;
+}
+
+/* Typography families */
+.font-inter { font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif; }
+.font-poppins { font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif; }
+
+/* Background decorative gradients */
+/* legacy bg removed in favor of Background component */
+
+/* Utility to use accent color via arbitrary values */
+.accent-text { color: hsl(var(--accent)); }
+.accent-bg { background-color: hsl(var(--accent)); }
+.accent-ring { --tw-ring-color: hsl(var(--accent)); }
+
+/* Ensure anchored sections aren't hidden under the sticky header */
+section[id] {
+  scroll-margin-top: var(--header-offset);
+}
+
+/* Soft entrance animation utility */
+.fade-in-up { opacity: 0; transform: translateY(12px); animation: fadeInUp .6s both; }
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Keep native cursor visible for better usability */

@@ -23,8 +23,7 @@ A modern, responsive personal portfolio with a dark theme, smooth animations, an
 ## Sections
 - About, Skills, Projects, Education, Certificates, Contact
 
-## Deploy
-- Vercel/Netlify: build command `npm run build`, output directory `dist`.
+
 
 ## Notes
 - Tailwind v4 uses the `@import "tailwindcss";` entry in `src/index.css`.
